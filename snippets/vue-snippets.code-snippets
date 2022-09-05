@@ -1,0 +1,27 @@
+// YJF UI Snippets
+{
+	// 组件模版
+	"Template": {
+		"scope": "vue",
+		"prefix": ["yjf-component", "yjf-template"],
+		"body": [
+					"<template>",
+					"\t<div>",
+					"\t</div>",
+					"</template>",
+					"<script lang='ts'>",
+					"import { defineComponent } from \"vue\";",
+					"export default defineComponent({",
+					"\tname: '${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}',",
+					"\tprops: {},",
+					"\tsetup() {",
+					"\t\treturn {};",
+					"\t}",
+					"})",
+					"</script>",
+					"<style lang='less' scoped>",
+					"</style>",
+				],
+		"description": "组件模版"
+	}
+}

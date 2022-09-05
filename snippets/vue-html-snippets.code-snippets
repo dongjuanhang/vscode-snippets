@@ -1,0 +1,48 @@
+// YJF UI Snippets 基础组件
+{
+    // 按钮
+    "Button": {
+        "prefix": "yjf-button",
+        "body": [
+            "<yjf-button type=\"${1|default,primary,info,warning,danger|}\" @click=\"${2}\">${3:按钮}</yjf-button>"
+        ],
+        "description": "按钮"
+    },
+    // 表单
+    "Form": {
+        "prefix": "yjf-form",
+        "body": [
+            "<yjf-form",
+			"\tlayout=\"${1|horizontal,vertical,inline|}\"",
+			"\tlabelAlign=\"${2|left,right|}\"",
+			"\tlabelCol=\"${3}\"",
+			"\twrapperCol=\"${4}\"",
+			"\t:model=\"${5:formState}\"",
+            "\tref=\"superForm\"",
+			">",
+			"\t<yjf-form-item", 
+			"\t\tlabel=\"${6:姓名}\"",
+			"\t\tname=\"${7:name}\"",
+			"\t\t:required=\"${8:false}\"",
+			"\t>",
+			"\t</yjf-form-item>",
+			"</yjf-form>"
+        ],
+        "description": "超级表单"
+	},
+	// 表格
+    "Table": {
+		"prefix": "yjf-table",
+		"body": [
+					"<yjf-table",
+					"\t:dataSource=\"${1:dataSource}\"",
+					"\t:columns=\"${2:columns}\"",
+					"\t:rowKey=\"${3:id}\"",
+					"\t:pagination=\"${4:false}\"",
+					"\t:loading=\"${4:loading}\"",
+					">",
+					"</yjf-table>"
+				],
+		"description": "超级表格"
+	}
+}

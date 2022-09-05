@@ -1,0 +1,21 @@
+{
+    "Hello Word": {
+        "scope": "javaScript",
+        "prefix": "hello",
+        "body": [
+			"console.log('${0}')",
+            "console.log('${2|happy,sad,feelingless|}')",
+			"console.log('${1:Hello Word}')"
+        ],
+		"description": "欢迎来到新世界！"
+    },
+    "File Info": {
+		"prefix": "file",
+		"body": [
+			"console.log('文件名：$TM_FILENAME_BASE')",
+			"console.log('文件路径：$RELATIVE_FILEPATH')",
+			"console.log('转化文件名：${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}')",
+		],
+		"description": "文件信息"
+	},
+}

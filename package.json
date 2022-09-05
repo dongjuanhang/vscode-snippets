@@ -1,0 +1,30 @@
+{
+  "name": "yjf-ui-snippets",
+  "displayName": "YJF UI Snippets",
+  "description": "YJF UI组件片段",
+  "publisher": "YJF Front Team",
+  "version": "0.0.1",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue-snippets.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue-html-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript-snippets.code-snippets"
+      }     
+    ]
+  }
+}
